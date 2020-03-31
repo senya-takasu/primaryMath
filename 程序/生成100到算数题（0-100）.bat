@@ -1,0 +1,1 @@
+primaryMath.exe -r 100 -n 100

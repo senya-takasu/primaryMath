@@ -1,0 +1,1 @@
+primaryMath.exe -a Answers.txt -e Exercises.txt
