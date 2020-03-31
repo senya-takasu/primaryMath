@@ -108,9 +108,16 @@ int main(int argc, char** argv)
 		{
 			code.clear();
 			up = low = 0;
-			while (getline(infans, checktemp))
+			while (getline(infans, aans))
 			{
-				code.push_back(checktemp); ++up;
+				++up;
+				numn=aans.find('.');
+				checktemp.clear();
+				for (numn++; numn < aans.size(); ++numn)
+				{
+					checktemp.push_back(aans[numn]);
+				}
+				code.push_back(checktemp); 
 			}//读取全部答案
 
 			for (low = 0; low < up; ++low)//按顺序检查回答与答案是否一致
@@ -181,9 +188,9 @@ int main(int argc, char** argv)
 
 			checkwarse++;
 			std::cout << exp << " = " << std::endl;
-			fexc << exp << " = \n";
+			fexc <<i<<'.'<< exp << " = \n";
 			std::cout << "波兰式: " << repo << std::endl;
-			fans << result.toString() << '\n';
+			fans << i<<'.'<<result.toString() << '\n';
 		}
 		std::cout << "生成题目数量：" << checkwarse << endl;
 		std::cout << "生成数值范围：" << limit << endl;
