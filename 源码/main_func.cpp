@@ -188,9 +188,9 @@ int main(int argc, char** argv)
 
 			checkwarse++;
 			std::cout << exp << " = " << std::endl;
-			fexc <<i<<'.'<< exp << " = \n";
+			fexc <<i+1<<'.'<< exp << " = \n";
 			std::cout << "波兰式: " << repo << std::endl;
-			fans << i<<'.'<<result.toString() << '\n';
+			fans << 1+i<<'.'<<result.toString() << '\n';
 		}
 		std::cout << "生成题目数量：" << checkwarse << endl;
 		std::cout << "生成数值范围：" << limit << endl;
